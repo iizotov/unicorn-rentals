@@ -25,9 +25,9 @@ When another teams Service Router receives a request, they may use your microser
 
 | Service Name  |Type       | Instructions                                           |
 | ------------- |-----------| ------------------------------------------------------ |
-| swapcaser     |SAM(Lambda and API Gateway) | [__Service and Instructions__](https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/swapcaser.zip)    |
+| swapcaser     |SAM(Lambda and API Gateway) | [__Instructions__](swapcaser-readme.md)    |
 | reverser      |Fargate    | [__Instructions__](https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/reverser-readme.txt)          |
-| leeter        |Elastic Beanstalk | [__Service and Instructions__](https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/leeter.zip)       | 
+| leeter        |Elastic Beanstalk | [__Instructions__](leeter-readme.md)       | 
 
 
 __How do I know if my Microservice is working?__  
