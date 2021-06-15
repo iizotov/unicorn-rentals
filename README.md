@@ -25,18 +25,18 @@ When another teams Service Router receives a request, they may use your microser
 
 | Service Name  |Type       | Instructions                                           |
 | ------------- |-----------| ------------------------------------------------------ |
-| swapcaser     |SAM(Lambda and API Gateway) | [__Service and Instructions__](https://s3.amazonaws.com/EEASSETBUCKET/modules/gd2018/assets/swapcaser.zip)    |
-| reverser      |Fargate    | [__Instructions__](https://s3.amazonaws.com/EEASSETBUCKET/modules/gd2018/assets/reverser-readme.txt)          |
-| leeter        |Elastic Beanstalk | [__Service and Instructions__](https://s3.amazonaws.com/EEASSETBUCKET/modules/gd2018/assets/leeter.zip)       | 
+| swapcaser     |SAM(Lambda and API Gateway) | [__Service and Instructions__](https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/swapcaser.zip)    |
+| reverser      |Fargate    | [__Instructions__](https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/reverser-readme.txt)          |
+| leeter        |Elastic Beanstalk | [__Service and Instructions__](https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/leeter.zip)       | 
 
 
 __How do I know if my Microservice is working?__  
-First, try using the `testsvc` program provided [in this zip file](https://s3.amazonaws.com/EEASSETBUCKET/modules/gd2018/assets/testsvc.zip). This will test the correctness of your microservice and provide some information about what is wrong if it is not working properly. `testsvc` is also useful to test other team's microservices. There is a README with usage information in the zip file.
+First, try using the `testsvc` program provided [in this zip file](https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/testsvc.zip). This will test the correctness of your microservice and provide some information about what is wrong if it is not working properly. `testsvc` is also useful to test other team's microservices. There is a README with usage information in the zip file.
 
 Next, add the service's endpoint/URL into the correct input in the Dashboard. The Service Market place will report its health.  If you see latency and success rate of 0, but other team's services have values, you should re-check your microservice.   
 
 __How to simulate a real request to my Microservice?__  
-You can simulate a real user by using the `testsvc` program provided [in this zip file](https://s3.amazonaws.com/EEASSETBUCKET/modules/gd2018/assets/testsvc.zip).  
+You can simulate a real user by using the `testsvc` program provided [in this zip file](https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/testsvc.zip).  
 You could also use cURL, Httpie or Postman, etc. For example:
 ```
 curl -d '{"Message":"TestMessage"}' -H 'Content-Type: application/json' URI
@@ -74,7 +74,7 @@ An easy way to do this, is duplicate an old entry, and change the Endpoint and T
 
 __Building Service Routers__  
 Source is here:  
-https://s3.amazonaws.com/EEASSETBUCKET/modules/gd2018/assets/service-router.zip
+https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/service-router.zip
 
 To build/rebuild your Service Router, use a userdata like below with Amazon Linux 2. Your account comes with an Autoscaling group already built this way.  
 ```
