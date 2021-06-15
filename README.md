@@ -87,7 +87,7 @@ curl -o xray.zip https://s3.amazonaws.com/aws-xray-assets.us-east-1/xray-daemon/
 #for ARM / a1 instances, use 'curl -o xray.zip https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/xray-arm.zip'
 unzip xray.zip
 chmod +x ./xray && nohup ./xray &
-curl -o service-router.zip https://s3.amazonaws.com/EEASSETBUCKET/modules/gd2018/assets/service-router.zip
+curl -o service-router.zip https://s3.amazonaws.com/ee-assets-prod-us-east-1/modules/gd2018/assets/service-router.zip
 unzip service-router.zip
 cd service-router
 pip install -r requirements.txt
