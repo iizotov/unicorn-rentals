@@ -4,8 +4,7 @@ A SAM Lambda service (Python 3.6) that swaps case of text. Text becomes tEXT.
 
 What is AWS SAM? https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html
 
-
-To deploy, click on https://amzn.to/35jZJjH, tick all required capabilities and transforms at the bottom and click "Create Stack" 
+To deploy, click on https://amzn.to/35jZJjH, tick all required capabilities and transforms at the bottom and click "Create Stack". To find the swapcaser service endpoint, look into cloudformation stack outputs tab. 
 
 TROUBLESHOOTING:
 Swapcaser has some operational issues. Use X-ray & Cloudwatch logs to help fix any issues.
