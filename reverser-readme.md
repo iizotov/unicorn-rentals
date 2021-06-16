@@ -20,7 +20,7 @@ You can also look at error/warning logging with Cloudwatch Insights using with:
 
 ```
 fields @timestamp, status, message
-| filter status not like /info/
+| filter status like /error/
 | sort @timestamp desc
 | limit 20
 ```
